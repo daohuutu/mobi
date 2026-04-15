@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+
 class user {
   String name;
   int id;
   user(this.name, this.id);
 }
+
 class message {
   String content;
   int id;
   message(this.content, this.id);
 }
+
 class roomMessage {
   int id;
   String roomName;
@@ -16,6 +19,7 @@ class roomMessage {
   int messageId;
   roomMessage(this.id, this.roomName, this.userId, this.messageId);
 }
+
 void main() {
   runApp(const MyApp());
 }
@@ -73,7 +77,10 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
   var listUser = [user("Tu", 1), user("Tu2", 2)];
   var listMessage = [message("Hello", 1), message("Hi", 2)];
-  var listRoomMessage = [roomMessage(1,"giai tri", 1, 1), roomMessage(2, "phong chat 2", 2, 2)];
+  var listRoomMessage = [
+    roomMessage(1, "giai tri", 1, 1),
+    roomMessage(2, "phong chat 2", 2, 2),
+  ];
   void _incrementCounter() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
@@ -128,12 +135,19 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const Text('Danh sách người dùng:'),
-            Column(
-              children: listUser.map((user) => Text('ID: ${user.id}, Name: ${user.name}')).toList(),
+            Row(
+              children: listUser
+                  .map((user) => Text('ID: ${user.id}, Name: ${user.name}'))
+                  .toList(),
             ),
             const Text('Danh sách tin nhắn:'),
-            Column(
-              children: listMessage.map((message) => Text('ID: ${message.id}, Content: ${message.content}')).toList(),
+            Row(
+              children: listMessage
+                  .map(
+                    (message) =>
+                        Text('ID: ${message.id}, Content: ${message.content}'),
+                  )
+                  .toList(),
             ),
           ],
         ),
