@@ -27,12 +27,15 @@
 2. Thực hiện Collections
 
     var listUser = [user("Tu", 1), user("Tu2", 2)];
+
     var listMessage = [message("Hello", 1), message("Hi", 2)];
+   
     var listRoomMessage = [roomMessage(1,"giai tri", 1, 1), roomMessage(2, "phong chat 2", 2, 2)];
    
-3. Hiển thị dữ liệu
+4. Hiển thị dữ liệu
 
-    Danh sách người dùng
+    Danh sách người dùng:
         ID: 1, Name: Tu ID: 2, Name: Tu2
+   
     Danh sách tin nhắn:
         ID: 1, Content: Hello ID: 2, Content: Hi
