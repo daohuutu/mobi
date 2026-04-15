@@ -1,5 +1,21 @@
 import 'package:flutter/material.dart';
-
+class user {
+  String name;
+  int id;
+  user(this.name, this.id);
+}
+class message {
+  String content;
+  int id;
+  message(this.content, this.id);
+}
+class roomMessage {
+  int id;
+  String roomName;
+  int userId;
+  int messageId;
+  roomMessage(this.id, this.roomName, this.userId, this.messageId);
+}
 void main() {
   runApp(const MyApp());
 }
@@ -30,7 +46,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Convert to text'),
+      home: const MyHomePage(title: 'PrivateChat'),
     );
   }
 }
@@ -55,7 +71,9 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-
+  var listUser = [user("Tu", 1), user("Tu2", 2)];
+  var listMessage = [message("Hello", 1), message("Hi", 2)];
+  var listRoomMessage = [roomMessage(1,"giai tri", 1, 1), roomMessage(2, "phong chat 2", 2, 2)];
   void _incrementCounter() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
@@ -109,7 +127,14 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            const Text('Tran Quang Tu - 23017155\nDao Huu Tu - 23017227'),
+            const Text('Danh sách người dùng:'),
+            Column(
+              children: listUser.map((user) => Text('ID: ${user.id}, Name: ${user.name}')).toList(),
+            ),
+            const Text('Danh sách tin nhắn:'),
+            Column(
+              children: listMessage.map((message) => Text('ID: ${message.id}, Content: ${message.content}')).toList(),
+            ),
           ],
         ),
       ),
