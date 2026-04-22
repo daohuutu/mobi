@@ -39,3 +39,7 @@
    
     Danh sách tin nhắn:
         ID: 1, Content: Hello ID: 2, Content: Hi
+# Buổi thực hành số 3
+    
+    Thêm class user, room_Infor, chat_message, list_ten_class(user)
+
