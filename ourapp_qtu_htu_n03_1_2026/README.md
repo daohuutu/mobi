@@ -43,3 +43,11 @@
     
     Thêm class user, room_Infor, chat_message, list_ten_class(user)
 
+# Buổi thực hành số 6
+
+    Dự án gồm 3 đối tượng :
+
+        Người dùng(user), phòng(room_infor), tin nhắn(chat_message)
+
+    Các đối tượng kể trên không đủ cần thiết để phải trừu tượng hóa => chuyên biệt hóa 3 đối tượng.
+    
