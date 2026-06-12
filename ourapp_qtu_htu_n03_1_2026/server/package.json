@@ -1,0 +1,18 @@
+{
+  "name": "lan-chat-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Socket.IO server for LAN Chat (Flutter client)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.17.0",
+    "socket.io": "^4.8.1"
+  }
+}
