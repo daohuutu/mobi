@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:privatechat/models/chat_message.dart';
 import 'package:privatechat/models/join_request.dart';
-import 'package:privatechat/models/room_info.dart';
+import 'package:privatechat/models/room_infor.dart';
 import 'package:privatechat/models/room_member.dart';
 import 'package:privatechat/models/user.dart';
 import 'package:privatechat/services/socket_service.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:privatechat/models/room_info.dart';
+import 'package:privatechat/models/room_infor.dart';
 import 'package:privatechat/screens/room_chat_screen.dart';
 import 'package:privatechat/services/lan_chat_controller.dart';
 import 'package:privatechat/widgets/app_header_bar.dart';
