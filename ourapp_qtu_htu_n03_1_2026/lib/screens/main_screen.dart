@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:privatechat/screens/public_chat_screen.dart';
 import 'package:privatechat/screens/rooms_screen.dart';
-import 'package:privatechat/screens/user_screen.dart';
+import 'package:privatechat/screens/users_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -18,7 +18,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: IndexedStack(
         index: _index,
-        children: const [PublicChatScreen(), RoomsScreen(), UserScreen()],
+        children: const [PublicChatScreen(), RoomsScreen(), UsersScreen()],
       ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: _index,
