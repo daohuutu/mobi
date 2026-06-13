@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
                     Text(
-                      'Đăng nhập bảo mật',
+                      'Chào mừng bạn đến với PrivateChat!',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
