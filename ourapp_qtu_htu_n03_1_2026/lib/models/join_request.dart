@@ -13,7 +13,10 @@ class JoinRequest {
     try {
       final room = json['room']?.toString();
       final username = json['username']?.toString();
-      if (room == null || room.isEmpty || username == null || username.isEmpty) {
+      if (room == null ||
+          room.isEmpty ||
+          username == null ||
+          username.isEmpty) {
         return null;
       }
       final tsRaw = json['createdAt'];
